@@ -1,5 +1,6 @@
-## Advanced Data Analysis
-### Overview
+# Advanced Data Analysis (OPS804) at Saint Mary's College of California
+
+## Overview
 
 Companies face different challanges in data science and business analytics that go beyond the scope of traditional statistics. [Amazon](https://www.amazon.com), for example, tries to identify the customers that have the same purchasing habits and recomends a product that you are most likely to be interested in. In order to solve this question you need to figure out how it is similar and how it is not (cluster analysis). Similarly, the marketing strategy of [Canva](https://www.canva.com/) is based on social media and recommendation marketing. So the question for them was: who are the big influencers in the field (social network analysis)?
 
