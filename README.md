@@ -1,4 +1,4 @@
-# Advanced Data Analysis (OPS804) at Saint Mary's College of California
+# Advanced Data Analysis (OPS804)
 
 ## Overview
 
