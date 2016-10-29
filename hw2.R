@@ -4,6 +4,7 @@ library(dplyr)
 library(e1071)
 library(ggplot2)
 library(stats)
+library(car)
 
 data <- read.csv("C:/Users/vivia/OneDrive/Documents/GitHub/class material/classmaterial/class 2/ANOVA/ERWaiting/data/ERWaiting.csv")
 names(data)
@@ -30,5 +31,10 @@ fit1.aov.summary
 erdata.tukey <- TukeyHSD(fit1)
 erdata.tukey
 
+ER.levene <- leveneTest(value ~ as.factor(variable), erdata.melt)
+print(ER.levene)
 
-
+qqp <- ggplot(erdata.melt) +
+  stat_qq(aes(sample = value, colour = factor(variable))) +
+  guides(col = guide_legend(title = "Hospital Type"))
+print(qqp)
